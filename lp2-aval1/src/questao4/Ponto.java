@@ -3,7 +3,7 @@ package questao4;
 public class Ponto {
 
 	private double x, y;
-	
+
 	public Ponto(double x, double y) {
 		super();
 		this.x = x;
@@ -11,8 +11,8 @@ public class Ponto {
 	}
 
 	public double getDistancia(Ponto p) {
-		//TODO: utilizar Pitágoras
-		return 0;
+		return Math.sqrt(Math.pow(x - p.x, 2.0) 
+				+ Math.pow(y - p.y, 2.0));
 	}
 
 	public double getX() {
@@ -27,6 +27,5 @@ public class Ponto {
 	public String toString() {
 		return String.format("Ponto [x=%s, y=%s]", x, y);
 	}
-	
-	
+
 }
