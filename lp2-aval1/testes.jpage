@@ -1,0 +1,2 @@
+questao1.Data d = new questao1.Data(16,4,2013);
+d.getDiaDaSemana();(int) 2
